@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'Faith';
+    src: url('Faith\ Collapsing.ttf'); }
+@font-face {
+    font-family: 'Krayon';
+    src: url('DK\ Cool\ Crayon.ttf')}
+
+h2{
+    background: linear-gradient(to bottom, rgb(9, 57, 94),rgb(58, 82, 148));
+    color:rgb(240, 244, 254);
+    text-align: center;
+    font-family: 'Faith';
+}
+body{
+    background-image: url(blu.jpe);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1{
+    background: linear-gradient(to bottom, rgb(235, 225, 225),rgb(62, 125, 173));
+    color:rgb(54, 88, 162);
+    text-align: center;
+    font-family: 'Bleeding';
+}
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+   background: linear-gradient(to bottom, rgb(173, 150, 116),rgb(242, 255, 235));
+    color:rgb(10, 32, 69); 
+    padding: 30px;
+    border-radius: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.isi{
+    font-family: 'Krayon';
+    color: rgb(24, 31, 68);
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white; 
+    
+}
+
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top{
+    opacity: 1;
+    z-index: 2; 
+}
+
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.foto img.bottom{
+    opacity: 0; 
+    z-index: 1;
+}
+
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+div.makanan{
+text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Krayon';
+    color: rgb(104, 37, 9);
+}
+img{
+    padding: 10px;
+}
+div.sushi{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.sushi:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.taco{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.taco:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.egg{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.egg:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+div.minuman{
+text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Krayon';
+    color: rgb(104, 37, 9);
+}
+img{
+    padding: 10px;
+}
+div.water{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.water:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.apple{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.apple:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.matcha{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.matcha:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+div.band{
+text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Krayon';
+    color: rgb(104, 37, 9);
+}
+img{
+    padding: 10px;
+}
+div.alice{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.alice:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.herwords{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.herwords:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.amarionette{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.amarionette:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+div.hewan{
+text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Krayon';
+    color: rgb(104, 37, 9);
+}
+img{
+    padding: 10px;
+}
+div.baboon{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.baboon:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.donkey{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.donkey:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.orang{
+    width: 250px;
+    height: 280px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.orang:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+div.film{
+text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Krayon';
+    color: rgb(104, 37, 9);
+}
+img{
+    padding: 10px;
+}
+div.shrek{
+    width: 250px;
+    height: 380px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.shrek:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.shrek2{
+    width: 250px;
+    height: 380px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.shrek2:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.shrek3{
+    width: 250px;
+    height: 380px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.shrek3:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+div.warna{
+text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Krayon';
+    color: rgb(104, 37, 9);
+}
+img{
+    padding: 10px;
+}
+div.black{
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.black:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.grey{
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.grey:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.white{
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.white:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+div.idols{
+text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Krayon';
+    color: rgb(104, 37, 9);
+}
+img{
+    padding: 10px;
+}
+div.cg{
+    width: 350px;
+    height: 380px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.cg:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.marsha{
+    width: 350px;
+    height: 380px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.marsha:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+img{
+    padding: 10px;
+}
+div.ad{
+    width: 350px;
+    height: 380px;
+    border: 15px;
+    background-color: rgb(241, 237, 226);
+    box-shadow: 0 4px 8px 0 rgba(109, 75, 75, 0.861);
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+div.ad:hover{
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+}
+div.puberty{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white; 
+    
+}
+
+div.puberty img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top{
+    opacity: 1;
+    z-index: 2; 
+}
+
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.foto img.bottom{
+    opacity: 0; 
+    z-index: 1;
+}
+
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
